@@ -10719,3 +10719,18 @@ h2 .dotOrange {
 }
 
 
+/* Estilo do botão WhatsApp flutuante */
+.whatsapp-button {
+    position: fixed;
+    bottom: 100px; /* Distância do fundo da página */
+    right: 35px; /* Distância da direita da página */
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 50px; /* Largura do ícone do WhatsApp */
+    height: 50px; /* Altura do ícone do WhatsApp */
+    border-radius: 50%; /* Deixa o ícone redondo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    cursor: pointer;
+}

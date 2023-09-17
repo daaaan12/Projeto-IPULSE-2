@@ -511,3 +511,12 @@
     axilInit.i();
 
 })(window, document, jQuery);
+
+
+// Script.js (Exemplo de rolagem suave)
+document.querySelector('.whatsapp-button').addEventListener('click', function () {
+    window.scrollTo({
+        top: 0, // Rolar para o topo da página
+        behavior: 'smooth' // Efeito de rolagem suave
+    });
+});

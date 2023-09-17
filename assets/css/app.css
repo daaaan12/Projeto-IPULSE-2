@@ -10631,7 +10631,7 @@ body.op-modal-open {
     animation: moveUpDownLeft 6s linear infinite; /* 6s de duração, linear, e loop infinito */
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
   .sumirMobi {
     display: none;
   }

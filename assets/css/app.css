@@ -1,10 +1,5 @@
 /*---------------------------------------------
-Template Name: Abstrak
-Template URL: https://new.axilthemes.com/demo/template/abstrak/
-Description: Digital Agency HTML5 Template
-Author: Axilthemes
-Author URL: https://axilthemes.com/
-Version: 1.6.0
+
 
 ===============================================   
 STYLESHEET INDEXING
@@ -3553,7 +3548,7 @@ Pagination
     content: "";
     height: 730px;
     width: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--color-dark);
     position: absolute;
     top: 0;
     left: 0;
@@ -4608,7 +4603,9 @@ Pagination
 
 .project-grid .thumbnail img {
     border-radius: 30px 30px 0 0;
-    width: 100%;
+    width: 80%;
+   
+   
     -webkit-transition: var(--transition);
     transition: var(--transition);
     -webkit-transform: scale(1);
@@ -4915,7 +4912,7 @@ Pagination
     content: "";
     height: 100%;
     width: 100%;
-    background: var(--gradient-dark);
+    background: rgb(247, 188, 28);
     border: 1px solid;
     border-image-source: linear-gradient(0deg, #27272E 64.45%, rgba(74, 75, 86, 0.72) 100%);
     border-radius: 30px;
@@ -10604,3 +10601,68 @@ body.op-modal-open {
         padding-bottom: 0;
     }
 }
+
+.moverShape2{
+    position: relative;
+    left: -4rem;
+    transform: rotate(-12deg);
+}
+
+@keyframes moveUpDownLeft {
+    0% {
+      transform: translateY(0) translateX(0); /* Começa na posição original */
+    }
+    25% {
+      transform: translateY(200px) translateX(0); /* Move para baixo */
+    }
+    50% {
+      transform: translateY(0) translateX(-100px); /* Move para a esquerda */
+    }
+    75% {
+      transform: translateY(-200px) translateX(0); /* Move para cima */
+    }
+    100% {
+      transform: translateY(0) translateX(0); /* Volta para a posição original */
+    }
+  }
+  
+
+  .shape-3 {
+    animation: moveUpDownLeft 6s linear infinite; /* 6s de duração, linear, e loop infinito */
+  }
+
+  @media (max-width: 500px) {
+  .sumirMobi {
+    display: none;
+  }
+
+}
+
+/* CSS para a animação */
+@keyframes moveQuestionMark {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px); /* Mova para a direita */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Aplicar a animação ao span */
+  .animated-question-mark {
+    animation: moveQuestionMark 4s ease-in-out infinite; /* Ajuste a duração e o efeito desejados */
+    display: inline-block; /* Para que a animação funcione */
+  }
+
+
+  .font4rem {
+    font-size: 3rem!important;
+    color: rgb(0, 0, 0)!important;
+  }
+
+  .font7rem {
+    font-size: 7rem;
+  }

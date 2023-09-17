@@ -10666,3 +10666,56 @@ body.op-modal-open {
   .font7rem {
     font-size: 7rem;
   }
+
+  .card-missao {
+    width: 33%;
+ 
+}
+
+.card-visao {
+    width: 33%;
+   
+}
+
+.card-valores {
+    width: 33%;
+    
+}
+
+h2 .dotOrange {
+    color: orange!important;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .containerQuemSomos {
+        width: 100%!important;
+    }
+
+    .imgLog {
+        width: 40%;
+    }
+
+    .imgLog2 {
+        width: 60%;
+    }
+
+    .containerMVV {
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-missao, .card-valores, .card-visao {
+        
+        width: 100%;
+    }
+    
+
+}
+
+

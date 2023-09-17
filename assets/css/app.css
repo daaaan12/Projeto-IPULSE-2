@@ -10684,7 +10684,7 @@ body.op-modal-open {
 
 h2 .dotOrange {
     color: orange!important;
-
+    font-weight: 900;
 }
 
 
@@ -10718,6 +10718,11 @@ h2 .dotOrange {
 
 }
 
+
+.textOrange {
+    color: orange!important;
+   
+}
 
 /* Estilo do botão WhatsApp flutuante */
 .whatsapp-button {

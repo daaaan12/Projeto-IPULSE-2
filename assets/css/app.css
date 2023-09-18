@@ -6813,6 +6813,7 @@ Pagination
     opacity: 0;
     pointer-events: none;
     padding: 50px;
+    
 }
 
 @media only screen and (max-width: 767px) {
@@ -10737,3 +10738,5 @@ h2 .dotOrange {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
     cursor: pointer;
 }
+
+

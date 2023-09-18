@@ -10739,4 +10739,18 @@ h2 .dotOrange {
     cursor: pointer;
 }
 
+.ajusteFont {
+    font-size: 4.5rem!important;
+}
 
+.ajusteFont2 {
+    font-size: 4rem;
+}
+@media (max-width: 500px) {
+    .ajusteFont {
+        font-size: 2.7rem!important;
+    }
+    .ajusteFont2 {
+        font-size: 3.5rem!important;
+    }
+}

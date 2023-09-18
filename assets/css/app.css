@@ -10754,3 +10754,43 @@ h2 .dotOrange {
         font-size: 3.5rem!important;
     }
 }
+
+/* CSS para alinhar os controles no meio horizontal */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: orange; /* Cor de fundo */
+  border-radius: 50%; /* Borda circular */
+  width: 20px; /* Largura */
+  height: 20px; /* Altura */
+  text-align: center;
+  line-height: 40px; /* Centralizar verticalmente */
+  font-size: 20px; /* Tamanho do ícone */
+  color: #080808; /* Cor do ícone */
+  transition: background-color 0.3s ease; /* Efeito de transição */
+
+  top: 50%; /* Centralizar verticalmente */
+  transform: translateY(-50%); /* Ajustar para centralizar verticalmente */
+ 
+}
+
+/* Estilo para ícones do Font Awesome */
+.carousel-control-prev .fas,
+.carousel-control-next .fas {
+  font-weight: bold;
+}
+
+/* Estilo para ícones do Bootstrap Icons */
+.carousel-control-prev .bi,
+.carousel-control-next .bi {
+  font-size: 1.5rem;
+}
+
+/* Estilo para controles à esquerda */
+.carousel-control-prev {
+  left: 10px; /* Ajuste a posição à esquerda conforme necessário */
+}
+
+/* Estilo para controles à direita */
+.carousel-control-next {
+  right: 10px; /* Ajuste a posição à direita conforme necessário */
+}

@@ -1,39 +1,57 @@
-// Selecione o modal e o botão "close"
-const modal = document.getElementById('meuModal');
-const closeButton = modal.querySelector('.close');
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecione o modal e o botão "Fechar"
+    const modal = document.getElementById('meuModal');
+    const closeButton = modal.querySelector('.close');
 
-// Função para abrir o modal
-function abrirModal() {
-  // Exiba o modal (defina display como "flex" ou adicione uma classe visível)
-  modal.style.display = 'flex'; // ou modal.classList.add('visivel');
+    // Função para abrir o modal
+    function abrirModal() {
+        // Exiba o modal (defina display como "flex" ou adicione uma classe visível)
+        modal.style.display = 'flex'; // ou modal.classList.add('visivel');
 
-  // Impedir que a página role enquanto o modal estiver aberto
-  document.body.style.overflow = 'hidden';
-}
+        // Impedir que a página role enquanto o modal estiver aberto
+        document.body.style.overflow = 'hidden';
 
-// Função para fechar o modal
-function fecharModal() {
-  // Oculte o modal (defina display como "none" ou remova a classe visível)
-  modal.style.display = 'none'; // ou modal.classList.remove('visivel');
+        // Adicione a classe op-modal-open ao corpo
+        document.body.classList.add('op-modal-open');
+    }
 
-  // Restaure a rolagem da página
-  document.body.style.overflow = 'auto';
-}
+    // Função para fechar o modal
+    function fecharModal() {
+        // Oculte o modal (defina display como "none" ou remova a classe visível)
+        modal.style.display = 'none'; // ou modal.classList.remove('visivel');
 
-// Adicione um evento de clique ao botão "close"
-closeButton.addEventListener('click', fecharModal);
+        // Restaure a rolagem da página
+        document.body.style.overflow = 'auto';
 
-// Evento de clique nos projetos dentro do carrossel
-$('.project').on('click', function () {
-  // Feche o modal atual (se estiver aberto)
-  fecharModal();
+        // Remova a classe op-modal-open do corpo
+        document.body.classList.remove('op-modal-open');
 
-  // Obtenha as informações relevantes para o projeto clicado
-  const projetoClicado = obterInformacoesDoProjeto(this); // Substitua com a lógica para obter informações do projeto
+        // Limpe o conteúdo do modal
+        modal.querySelector('.portfolio-content').innerHTML = '';
+        modal.querySelector('.portfolio-thumbnail').innerHTML = '';
+    }
 
-  // Atualize o conteúdo do modal com as informações do projeto
-  atualizarConteudoDoModal(projetoClicado); // Substitua com a lógica para atualizar o conteúdo do modal
+    // Adicione um evento de clique ao botão "Fechar"
+    closeButton.addEventListener('click', function () {
+        fecharModal();
+    });
 
-  // Chame a função abrirModal() para abrir o novo modal
-  abrirModal();
+    // Adicione um evento de clique ao modal
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            fecharModal();
+        }
+    });
+
+    // Evento de clique nos projetos dentro do carrossel (abre o modal)
+    $('.project').on('click', function () {
+        abrirModal();
+    });
+    
+    // Adicione um ouvinte de evento de clique ao documento para fechar o modal ao clicar fora dele
+    document.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            fecharModal();
+        }
+    });
 });

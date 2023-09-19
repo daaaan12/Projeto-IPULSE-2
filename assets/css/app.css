@@ -6933,6 +6933,7 @@ Pagination
 
 .op-portfolio-modal .portfolio-thumbnail {
     margin-bottom: 30px;
+   
 }
 
 .op-portfolio-modal .portfolio-thumbnail a {
@@ -10693,6 +10694,22 @@ h2 .dotOrange {
     border-radius: 50%;
 }
 
+/* Adicione essas regras CSS para centralizar verticalmente o modal */
+#meuModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.op-modal-inner {
+  /* Adicione outras propriedades de estilo aqui, se necessário */
+}
 
 
 

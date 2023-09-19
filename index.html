@@ -551,7 +551,7 @@
                     <li class="list-group-item">Certificação do INPI</li>
                     <li class="list-group-item">Validade 10 anos</li>
 
-                    por 10 anos
+                  
 
                   </ul>
                 </div>
@@ -1074,7 +1074,7 @@
                           src="assets/media/Portfolio Social Media/Mockup celular - portfólio perfil ricos projetados.png"
                           alt="Blog Post" />
                       </div>
-                      <div class="content" id="meuModal">
+                      <div class="content" >
                         <h4 class="title">
                           <a href="single-portfolio.html">Ricos</a>
                         </h4>
@@ -2653,6 +2653,41 @@ meuBotao.addEventListener('mouseout', () => {
 
 
 <script>
+// Selecione o modal e o botão "close"
+const modal = document.getElementById('meuModal');
+const closeButton = modal.querySelector('.close');
+
+// Função para abrir o modal
+function abrirModal() {
+  // Exiba o modal (defina display como "block" ou adicione uma classe visível)
+  modal.style.display = 'block'; // ou modal.classList.add('visivel');
+
+  // Impedir que a página role enquanto o modal estiver aberto
+  document.body.style.overflow = 'hidden';
+}
+
+// Função para fechar o modal
+function fecharModal() {
+  // Oculte o modal (defina display como "none" ou remova a classe visível)
+  modal.style.display = 'none'; // ou modal.classList.remove('visivel');
+
+  // Restaure a rolagem da página
+  document.body.style.overflow = 'auto';
+}
+
+// Adicione um evento de clique ao botão "close"
+closeButton.addEventListener('click', fecharModal);
+
+// Adicione um evento de clique ao modal
+modal.addEventListener('click', function (event) {
+  if (event.target === modal) {
+    // Verifique se o clique ocorreu no fundo do modal
+    fecharModal();
+  }
+});
+
+// Exemplo de como abrir o modal programaticamente
+// Você pode chamar a função abrirModal() quando desejar abrir o modal
 
 
 </script>

@@ -6858,6 +6858,8 @@ Pagination
     transition: var(--transition);
 }
 
+
+
 .op-modal-wrap .op-modal-inner .close:hover {
     color: var(--color-light);
     background-color: var(--color-primary);
@@ -10688,6 +10690,7 @@ body.op-modal-open {
 h2 .dotOrange {
     color: orange!important;
     font-weight: 900;
+    border-radius: 50%;
 }
 
 

@@ -10776,8 +10776,8 @@ h2 .dotOrange {
 .carousel-control-next {
   background-color: orange; /* Cor de fundo */
   border-radius: 50%; /* Borda circular */
-  width: 20px; /* Largura */
-  height: 20px; /* Altura */
+  width: 30px; /* Largura */
+  height: 30px; /* Altura */
   text-align: center;
   line-height: 40px; /* Centralizar verticalmente */
   font-size: 20px; /* Tamanho do ícone */

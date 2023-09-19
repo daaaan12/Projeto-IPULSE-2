@@ -10808,4 +10808,16 @@ h2 .dotOrange {
   right: 10px; /* Ajuste a posição à direita conforme necessário */
 }
 
+/* Adicione estilos de rotação quando o mouse estiver sobre o botão */
+.meuBotao:hover .rotacionar {
+    transform: rotate(360deg);
+    transition: transform 1.5s ease; /* Adicione uma transição suave */
+}
 
+.btn-edit {
+    border-radius: 2rem 0rem 2rem 0rem;
+}
+
+.btn-edit:hover {
+    background-color: var(--color-primary);
+}

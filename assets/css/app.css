@@ -113,6 +113,11 @@ STYLESHEET INDEXING
 /*-------------------------
     Reset Styels
 -------------------------*/
+.borda {
+    border: 1px solid red;
+}
+
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -10660,10 +10665,7 @@ body.op-modal-open {
   }
 
 
-  .font4rem {
-    font-size: 3rem!important;
-    color: rgb(0, 0, 0)!important;
-  }
+ 
 
   .font7rem {
     font-size: 7rem;
@@ -10711,12 +10713,20 @@ h2 .dotOrange {
   /* Adicione outras propriedades de estilo aqui, se necessário */
 }
 
-
+.containerTxtQuemSomos {
+    width: 50%;
+    text-align: center;
+}
 
 @media (max-width: 1000px) {
 
     .containerQuemSomos {
         width: 100%!important;
+    }
+
+    .containerTxtQuemSomos {
+        width: 100%;
+        text-align: center;
     }
 
     .imgLog {
